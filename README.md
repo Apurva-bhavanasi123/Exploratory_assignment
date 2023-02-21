@@ -17,3 +17,11 @@ We want to determine how many time steps are needed before all the nodes are mar
 1. For the first process, prove that the expected number of nodes sent is (N log N). How well does this match your simulations?
 2. For the second process, you should find that almost all N nodes must be sent before the tree is marked. Show that, with constant probability, at least N – 2√Ñ nodes must be sent.
 3. The behavior of the third process might seem a bit unusual. Explain it with a proof. After answering these questions, you may wish to consider other facts you could prove about these processes.
+
+
+
+
+Solution:
+Here I have developed the experiment using socket programming in python, by creating both server and client to exchange messages ( here nodes) and creation of tree si done by client and the marking of the binary tree is done by deamon thread as server keeps sending new nodes.
+Server has three conditions on which process to run and based on the selection nodes will be sent and client keeps sending marked nodes after each execution of mark thread.
+ 
