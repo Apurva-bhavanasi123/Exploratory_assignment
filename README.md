@@ -7,7 +7,9 @@ The marking rule is applied recursively as much as possible before the next node
 Now let us consider the different ways in which I might be sending you the nodes.
 Process 1: Each unit of time, I send the identifier of a node chosen independently and uniformly at random from all of the N nodes. Note that I might send you a node that is already marked, and in fact I may send a useless node that I have already sent.
 
-BALLS, BINS, AND RANDOM GRAPHS
+![image](https://user-images.githubusercontent.com/43738214/220412493-74e5f822-667c-4b96-9b54-b7fd7f67eb8b.png)
+
+
 Figure 5.3: The arrival of X causes all other nodes to be marked.
 Process 2: Each unit of time I send the identifier of a node chosen uniformly at random from those nodes that I have not yet sent. Again, a node that has already been marked might arrive, but each node will be sent at most once.
 Process 3: Each unit of time I send the identifier of a node chosen uniformly at random from those nodes that you have not yet marked.
